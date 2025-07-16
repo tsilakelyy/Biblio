@@ -15,6 +15,9 @@ echo ========================
 
 echo [0/4] Contenu initial du dossier target :
 dir "%~dp0target"
+4. Push + PR
+git push -u origin feature/config-structure
+gh pr create --base main --head feature/config-structure --title "config folder" --body "Ajout du dossier config  et configurations Spring Boot"
 
 echo [0.5/4] Contenu du webapps avant any change :
 dir "%DEST_DIR%"
